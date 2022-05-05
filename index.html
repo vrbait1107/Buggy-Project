@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
+        <!-- Bootstrap css-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!-- Font-Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <!-- AOS Library -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Local Stylesheets -->
+        <link rel="stylesheet" href="css/index.css">
 
 <style>
     .font-time {
@@ -23,6 +32,39 @@
 
 </head>
 <body>
+
+    <!--/# Navbar -->
+    
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    
+        <a class="navbar-brand" class="text-uppercase" href="#">YSM Tech-Tronix</a>
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <main class="container">
         <div class="row" id="loginForm">
             <section class="offset-md-3 col-md-6">
@@ -44,7 +86,7 @@
                         
     
                         <button class="btn btn-block btn-info rounded-pill" id="submit"
-                            onclick="return validate();">Login</button>
+                            onclick="validate();">Login</button>
     
                     </form>
                     <hr>
@@ -75,18 +117,20 @@
                 let username = $("#username").val();
                 let password = $("#password").val();
 
-                if (username == "" || password == "") {
-                    alert("All Fields are Required");
-                    return false;
-                }
-
-                if(username === "admin@admin.com" && password=== "password"){
-                    window.location.href="https://vrbait1107.github.io/Buggy-Project/main.html";
+                if (username != "" && password != "") {
+                    location.href = "https://vrbait1107.github.io/Buggy-Project/main.html";
+                     alert("Logged in Successfully");
                 }else{
-                    alert("Invalid Credentials!");
-                    return false;
+                    alert("All Fields are Required");
                 }
             }
+
+            $(document).ready(function () {
+                    $(".nav-link").on("click", function () {
+                        alert("You must Logged In to Visit this Website.")
+                    });
+            });
+
 
     </script>
 </body>

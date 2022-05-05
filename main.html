@@ -1,53 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+    <!-- Search Engine Optimization -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Vishal Bait">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
+    <title>YSM Tech-Tronix Projects</title>
 
-<style>
-    .font-time {
-  font-family: sans-serif;
-  font-weight: bold;
-}
-
-#loginForm {
-  min-height: 100vh;
-  align-items: center;
-}
-</style>
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Font-Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Local Stylesheets -->
+    <link rel="stylesheet" href="css/index.css">
 
 </head>
+
 <body>
-    <main class="container">
-        <div class="row" id="loginForm">
-            <section class="offset-md-3 col-md-6">
-    
-                <div class="card shadow p-5">
-                    <h3 class="text-center mb-3 font-time"> You are Logged In </h3>
-                    
-                    <hr>
-    
-                    
-    
+
+    <!--/# Navbar -->
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+
+        <a class="navbar-brand" class="text-uppercase" href="#">YSM Tech-Tronix</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="#home-container">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="#work-container">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="#service-container">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="#about-container">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="#contact-container">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- /# Home Container -->
+    <main class="container-fluid" id="home-container">
+
+        <div class="row">
+            <section class="col-md-8 offset-md-2 text-dark column2">
+                <div id="typed-strings">
+                    <h1 class="font-teko mt-3 display-3">YSM Tech-Tronix</h1>
                 </div>
-    
+                <span id="typed" class="font-teko mt-3 display-3"></span>
+
+                <h3 class="mt-1 text-center font-germania-h3">We make and sell electronics products/projects also we
+                    help people and brands to reach their goals by
+                    designing &
+                    building
+                    user-centric Website and mobile Applications.</h3>
             </section>
         </div>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    <!-- /# Work Container -->
+    <main class="container-fluid" id="work-container">
+
+        <div class="text-center">
+            <h3 class="font-germania my-5 skills-heading">
+                Our Products</h3>
+        </div>
+
+        <div class="row mx-auto mb-5">
+            <section class="col-md-4 text-center p-4" data-aos="zoom-in" data-aos-duration="1500">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="images/hand-sanitizer.png" alt="Hand-Sanitizer" class="img-fluid"
+                        style="max-height: 250px;">
+                </a>
+            </section>
+
+
+            <section class="col-md-7 p-4" data-aos="zoom-in" data-aos-duration="1500">
+                <h3 class="font-time  text-center">Contactless Hand Sanitizer Dispenser</h3>
+                <p class="text-justify">Due to increased spreadability of Coronavirus, YSM Tech-Tronix
+                    Provides you a contactless hand sanitizer
+                    dispenser. Which helps you to sanitize your hands without any contact of the hand and the dispenser.
+                </p>
+
+                <div class="text-center">
+                    <button class="mt-2 btn btn-outline-dark" data-toggle="modal"
+                        data-target="#hand-sanitizer-Modal">View
+                        Details</button>
+                </div>
+
+            </section>
+        </div>
+
+        <div class="row mx-auto mb-5">
+            <section class="col-md-4 text-center p-4" data-aos="zoom-in" data-aos-duration="1500">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="images/Product2.jpg" alt="Event Management" class="img-fluid" style="max-height: 250px;">
+                </a>
+            </section>
+
+
+            <section class="col-md-7 p-4" data-aos="zoom-in" data-aos-duration="1500">
+                <h3 class="font-time  text-center">Digital Sign Board</h3>
+                <p class="text-justify">Digital Sign Board provides the messaging flexibility and impact your need with
+                    digital display boards. Available in Various sizes and Price.</p>
+
+                <div class="text-center">
+                    <button class="mt-2 btn btn-outline-dark" data-toggle="modal" data-target="#sign-board-Modal">View
+                        Details</button>
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <div class="row mx-auto mb-5">
+            <section class="col-md-4 text-center p-4" data-aos="zoom-in" data-aos-duration="1500">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="images/jhalar-light.jpg" alt="Jhalar Light" class="img-fluid" style="max-height: 250px;">
+                </a>
+            </section>
+
+
+            <section class="col-md-7 p-4" data-aos="zoom-in" data-aos-duration="1500">
+                <h3 class="font-time  text-center">Jhalar Light</h3>
+                <p class="text-justify">Jhalar light is used for decoration in festival such as Diwali. We can decorate
+                    our Home, School,
+                    Office with Jhalar light. Jhalar light available in various color and sizes.</p>
+
+                <div class="text-center">
+                    <button class="mt-2 btn btn-outline-dark" data-toggle="modal" data-target="#jhalar-light-Modal">View
+                        Details</button>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- /#Service Container -->
+    <main class="container" id="service-container">
+
+        <div class="text-center">
+            <h3 class="font-germania my-5 skills-heading">
+                Our Services</h3>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4 p-4">
+
+                <div class="text-center" data-aos="zoom-in" data-aos-duration="1500">
+                    <img src="images/webDevelopment.png" alt="Web Development Logo" class="img-fluid my-4">
+                </div>
+
+                <div class="" data-aos="zoom-in" data-aos-duration="1500">
+                    <h3 class="text-center font-time">Web Development</h3>
+                    <p class="text-justify mt-4"> We create outstanding high performing and secure custom mobile and
+                        desktop responsive websites with
+                        a
+                        focus on unique, professional web design to grow customers business</p>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 p-4">
+
+                <div class="text-center" data-aos="zoom-in" data-aos-duration="1500">
+                    <img src="images/appDevelopment.png" alt="App Development" class="img-fluid my-4">
+                </div>
+
+                <div class="" data-aos="zoom-in" data-aos-duration="1500">
+                    <h3 class="text-center font-time">Mobile App Development</h3>
+                    <p class="text-justify mt-4">We create outstanding high performing and secure cross-platform and
+                        native mobile application with
+                        a
+                        focus on unique, professional mobile design to grow customers business.</p>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 p-4">
+                <div class="text-center" data-aos="zoom-in" data-aos-duration="1500">
+                    <img src="images/seo.png" alt="SEO" class="img-fluid my-4">
+                </div>
+
+                <div data-aos="zoom-in" data-aos-duration="1500">
+                    <h3 class="text-center font-time">SEO</h3>
+                    <p class="text-justify mt-4">Search engine optimization is what helps users find your site—web
+                        design is what keeps them there. That’s why SEO is built into every site we create to help
+                        your website to be discovered.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <h5 class="robota alert alert-info">for more details about above Services
+            visit our Second
+            Website <a href="https://insec.tech">Click
+                Here.</a>
+        </h5>
+
+    </main>
+
+
+    <!-- /#About Company-->
+
+    <main class="container-fluid" id="about-container">
+
+        <h3 class="font-germania my-5  mx-auto text-center skills-heading">
+            About YSM Tech-Tronix Projects</h3>
+
+        <section class="row">
+
+            <div class="offset-md-1 mb-5 col-md-5" data-aos="zoom-in" data-aos-duration="1500">
+                <img src="images/small company.png" class="img-fluid" alt="company">
+            </div>
+
+            <div class="col-md-6 pr-5" data-aos="zoom-in" data-aos-duration="1500">
+                <p class="text-justify">We are a electronics product based company that
+                    delivers truly outstanding
+                    electronics products to our
+                    clients. We also provide
+                    top web and mobile app development services by using and improving latest technologies that
+                    are out there. We have a
+                    team of
+                    Electronics Engineers, Website & Mobile app developers, who always believe any task can be done more
+                    smartly, and any
+                    existing system can be
+                    challenged, and ultimately, improved. Our services have always been client-oriented, we value your
+                    happiness and business more than
+                    anything else.</p>
+            </div>
+
+
+
+        </section>
+    </main>
+
+
+    <!-- /#Contact Container-->
+
+    <main class="container-fluid" id="contact-container">
+
+        <h3 class="font-germania my-5  mx-auto text-center skills-heading">
+            Contact</h3>
+
+        <section class="row">
+
+            <div class="col-md-7 text-center">
+
+                <div class="" data-aos="zoom-in" data-aos-duration="1500">
+                    <h3 class="font-robota contact"><i class="fab fa-whatsapp"></i> +91 8767567257</h3>
+                    <h3 class="font-robota contact"><i class="fas fa-mobile"></i> +91 8308737299</h3>
+                    <h3 class="font-robota contact"><i class="fas fa-envelope"></i> surajmohite1994@gmail.com</h3>
+                </div>
+
+
+                <h2 class="font-robota mt-5" data-aos="zoom-in" data-aos-duration="1500">Follow Us On
+                    Social Media</h2>
+                <hr />
+
+                <div class=" mt-4 d-flex px-5 flex-row justify-content-around follow" data-aos="zoom-in"
+                    data-aos-duration="1500">
+
+                    <a href="#" target="_blank" class="text-dark social-icon">
+                        <span><i class="fab fa-github fa-4x"></i></span>
+                        <h6>Github</h6>
+                    </a>
+
+                    <a href="#" target="_blank" class="text-dark social-icon">
+                        <span><i class="fab fa-linkedin fa-4x"></i></span>
+                        <h6>Linkedin</h6>
+                    </a>
+
+
+                    <a href="#" target="_blank" class="text-dark social-icon">
+                        <span><i class="fab fa-twitter fa-4x"></i></span>
+                        <h6>Twitter</h6>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-5 text-center px-5">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15217.130579816145!2d73.61714017109134!3d17.54172480777892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc20561a16e69bf%3A0xb0101e70bd78e6cf!2sMoravane%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1607342680588!5m2!1sen!2sin"
+                    width="500" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="bg-dark p-3 font-robota text-center text-white">
+        <h4>&copy; 2020 YSM Tech-Tronix Projects All Rights Reserved.</h4>
+    </footer>
+
+
+
+    <!-- Contactless Hand Sanitizer Dispenser Modal -->
+    <div class="modal fade" id="hand-sanitizer-Modal" tabindex="-1" aria-labelledby="hand-sanitizer-ModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="hand-sanitizer-ModalLabel">Hand Sanitizer</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Specification Yet to Updated
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="sign-board-Modal" tabindex="-1" aria-labelledby="sign-board-ModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sign-board-ModalLabel">Digital Sign Board</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Specification Yet to Updated
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="jhalar-light-Modal" tabindex="-1" aria-labelledby="jhalar-light-ModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="jhalar-light-ModalLabel">Jhalar Light</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Specification Yet to Updated
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 
-    
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+
+    <script>
+        var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings',
+            typeSpeed: 15,
+        });
+    </script>
+
 </body>
+
 </html>
