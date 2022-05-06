@@ -51,6 +51,9 @@
                 <li class="nav-item">
                     <a class="nav-link mx-3" href="#contact-container">Contact</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3 logout" href="#">Logout</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -413,6 +416,15 @@
         var typed = new Typed('#typed', {
             stringsElement: '#typed-strings',
             typeSpeed: 15,
+        });
+
+        $(document).ready(function () {
+            $(".logout").on("click", function () {
+                if (confirm("Are you sure want to Logout?")) {
+                    location.href = "https://vrbait1107.github.io/Buggy-Project";
+                    alert("Logged out Successfully");
+                }
+            });
         });
     </script>
 
