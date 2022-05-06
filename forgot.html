@@ -80,6 +80,8 @@
                         <button class="btn btn-block btn-info rounded-pill" id="submit"
                             onclick="return validate();">Reset</button>
 
+                        <button type="button" class="btn btn-block btn-danger rounded-pill" id="cancel">cancel</button>
+
                     </form>
                     
                     <hr/>
@@ -121,6 +123,18 @@
             }
 
         }
+
+        $(document).ready(function () {
+                $(".nav-link").on("click", function () {
+                    alert("You must Logged In to Visit this Website.")
+                });
+
+                $("#cancel").on("click", function () {
+                    if(confirm("Are you sure want to cancel this form?")){
+                        location.reload();
+                    }
+                });
+            });
 
     
 
