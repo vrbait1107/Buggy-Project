@@ -376,11 +376,20 @@
                         <textarea type="text" id="message" name="message" rows="3" class="form-control md-textarea"></textarea required>
                     </div>
             
-                                
-                    <div class="text-center text-md-left">
-                        <input class="btn btn-primary rounded-pill btn-block" type="submit" id="submit" name="submit" value="Submit">
+                    
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="text-center text-md-left col-md-5 offset-md-1">
+                                <input class="btn btn-primary  btn-block" type="submit" id="submit" name="submit" value="Submit">
+                            </div>
+
+                            <div class="text-center text-md-left col-md-5">
+                                <button type="button" class="btn btn-block btn-danger " id="cancel">Cancel</button>
+                            </div>
+                        </div>
                     </div>
-            
+                    
+
                 </form>
             </section>
             
@@ -557,6 +566,12 @@
                 if (confirm("Are you sure want to Logout?")) {
                     location.href = "https://vrbait1107.github.io/Buggy-Project";
                     alert("Logged out Successfully");
+                }
+            });
+
+            $("#cancel").on("click", function () {
+                if (confirm("Are you sure want to cancel this form?")) {
+                    location.reload();
                 }
             });
         });
