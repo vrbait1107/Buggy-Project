@@ -114,13 +114,21 @@
     <script>
         function validate() {
             let username = $("#username").val();
+
             
-            if (username !== "") {
-                alert("Email Sent Successfully");
-                return false;
-            }else{
+            if (username == "") {
                 alert("Please Enter Your Email");
+                return false;
             }
+
+            let filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if (!filter.test(username)) {
+                alert('Please provide a valid email address');
+                return false;
+            }
+
+            alert("Email Sent Successfully");
+            return false;
 
         }
 
